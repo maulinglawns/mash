@@ -1,0 +1,2 @@
+# mash
+mash - MAgnuSHell
