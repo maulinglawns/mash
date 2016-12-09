@@ -7,6 +7,7 @@
 body {
     background-color: #000
 }
+
 #console {
     font-family: courier, monospace;
     color: #fff;
@@ -33,6 +34,10 @@ button {
 
 a {
     color: #fff;
+}
+
+.tdLeft {
+    width: 100px;
 }
 </style>
 </head>

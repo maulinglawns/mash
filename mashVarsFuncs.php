@@ -17,15 +17,17 @@ $shell = "THIS WEBSITE:<br />
          <strong>vim</strong> and <strong>Geany</strong><br />";
         
 $help = "<strong>Magnus shell</strong><br />
-         OPTIONS:<br />
-         &nbsp;&nbsp;&nbsp;&nbsp;'help' - show this help<br />
-         &nbsp;&nbsp;&nbsp;&nbsp;'who' - show basic info about author<br />
-         &nbsp;&nbsp;&nbsp;&nbsp;'man mash' - info about this website<br />
-         &nbsp;&nbsp;&nbsp;&nbsp;'jobs' - show my professional work history<br />
-         &nbsp;&nbsp;&nbsp;&nbsp;'cv' - show my educational history<br />
-         &nbsp;&nbsp;&nbsp;&nbsp;'more' - the author beyond the basics<br />
-         &nbsp;&nbsp;&nbsp;&nbsp;'mash -cl' - contact info and links<br />
-         &nbsp;&nbsp;&nbsp;&nbsp;'rand' - random (useless?) info about author<br />";
+         <table>
+         OPTIONS:
+         <tr><td class=\"tdLeft\">'help'</td><td> - show this help</td></tr>
+         <tr><td>'who'</td><td> - show basic info about author</td></tr>
+         <tr><td>'man mash'</td><td> - info about this website</td></tr>
+         <tr><td>'jobs'</td><td> - show my professional work history</td><td>
+         <tr><td>'cv'</td><td> - show my educational history</td><td>
+         <tr><td>'more'</td><td> - the author beyond the basics</td><td>
+         <tr><td>'mash -cl'</td><td> - contact info and links</td><td>
+         <tr><td>'rand'</td><td> - random (useless?) info about author</td><td>
+         </table>";
          
 $jobs = "JOBS:<br />
          <strong>Current position:</strong><br />
@@ -83,7 +85,7 @@ $more = "MORE INFORMATION ON AUTHOR:<br />
          <strong>Skills:</strong><br />
          &middot; GNU/Linux<br />
          &middot; Linux system administration<br />
-         &middot; Mac OS X<br />
+         &middot; macOS<br />
          &middot; Web design<br/>
          &middot; Wordpress<br />
          &middot; GIMP<br />
