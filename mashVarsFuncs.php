@@ -16,9 +16,8 @@ $shell = "THIS WEBSITE:<br />
          <strong>GNU/Linux</strong>, <strong>Nginx</strong>, 
          <strong>vim</strong> and <strong>Geany</strong><br />";
         
-$help = "<strong>Magnus shell</strong><br />
-         <table>
-         OPTIONS:
+$help = "<table>
+         <strong>OPTIONS</strong>:
          <tr><td class=\"tdLeft\">'help'</td><td> - show this help</td></tr>
          <tr><td>'who'</td><td> - show basic info about author</td></tr>
          <tr><td>'man mash'</td><td> - info about this website</td></tr>
