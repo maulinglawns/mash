@@ -4,36 +4,36 @@
 <link rel="shortcut icon" href="images/favicon.ico" >
 <title>mash - MAgnuSHell</title>
 <style type="text/css"> 
-	body {
-		background-color: #000
-	}
-	#console {
-		font-family: courier, monospace;
-		color: #fff;
-		width:750px;
-		margin-left:auto;
-		margin-right:auto;
-		margin-top:80px;
-		font-size:14px;
-	}
-    
-    input {
-        background-color: #000;
-        color: #fff;
-        font-family: courier, monospace;
-        border: 0px solid;
-    }
-    
-    /* Hack to hide the submit button */
-    button {
-        position:absolute;
-        left:-9999px;
-        top:-9999px;
-    }
-    
-    a {
-        color: #fff;
-    }
+body {
+    background-color: #000
+}
+#console {
+    font-family: courier, monospace;
+    color: #fff;
+    width:750px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:80px;
+    font-size:14px;
+}
+
+input {
+    background-color: #000;
+    color: #fff;
+    font-family: courier, monospace;
+    border: 0px solid;
+}
+
+/* Hack to hide the submit button */
+button {
+    position:absolute;
+    left:-9999px;
+    top:-9999px;
+}
+
+a {
+    color: #fff;
+}
 </style>
 </head>
 <body>
