@@ -4,7 +4,7 @@ body {
 
 #console {
     font-family: courier, monospace;
-    color: #fff;
+    color: #33cc33;
     width:750px;
     margin-left:auto;
     margin-right:auto;
@@ -14,7 +14,7 @@ body {
 
 input {
     background-color: #000;
-    color: #fff;
+    color: #33cc33;
     font-family: courier, monospace;
     border: 0px solid;
     font-size:14px;
@@ -28,7 +28,7 @@ button {
 }
 
 a {
-    color: #fff;
+    color: #33cc33;
 }
 
 /* Make left table data width 100px for 'help' section */
