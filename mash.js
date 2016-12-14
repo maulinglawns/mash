@@ -12,8 +12,8 @@ function getCookieValue(aString)
     /* Search for cookie with name aString.
     Return value of cookie if found */
     
-    /* Create regex. Search for aString. Save the value inside (.*) */ 
-    var regex = new RegExp(aString + "=(.*)");
+    /* Create regex. Search for aString. Save the value inside () */ 
+    var regex = new RegExp(aString + "=([^;]*)");
     /* The result is saved in an array */
     var cArr = regex.exec(document.cookie);
     /* The value (if any) is saved in index 1 in the array */
