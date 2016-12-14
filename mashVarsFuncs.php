@@ -9,12 +9,12 @@ $who = "INFORMATION ON AUTHOR:<br />
         Current location: <strong>Solna, Sweden</strong>";
 
 $shell = "THIS WEBSITE:<br />
-         Written by Magnus Wallin, with:<br />
-         <strong>html</strong>, <strong>css</strong> and 
-         <strong>php</strong><br />
+         Written by Magnus Wallin, in:<br />
+         <strong>html</strong>, <strong>css</strong>,  
+         <strong>php</strong> and <strong>javascript</strong><br />
          Developed with:<br />
-         <strong>GNU/Linux</strong>, <strong>Nginx</strong>, 
-         <strong>vim</strong> and <strong>Geany</strong><br />";
+         <strong>GNU/Linux</strong>, <strong>Nginx</strong>, <strong>Apache</strong>,
+         <strong>Vim</strong> and <strong>Geany</strong><br />";
         
 $help = "<table>
          <strong>OPTIONS</strong>:

@@ -1,10 +1,10 @@
 body {
-    background-color: #000;
+    background-color: white;
 }
 
 #console {
     font-family: courier, monospace;
-    color: #fff;
+    color: black;
     width:750px;
     margin-left:auto;
     margin-right:auto;
@@ -13,8 +13,8 @@ body {
 }
 
 input {
-    background-color: #000;
-    color: #fff;
+    background-color: white;
+    color: black;
     font-family: courier, monospace;
     border: 0px solid;
     font-size:14px;
