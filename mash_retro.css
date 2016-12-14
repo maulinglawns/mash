@@ -35,3 +35,27 @@ a {
 .tdLeft {
     width: 100px;
 }
+
+#term_settings {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: #C8C8C8;
+    font-family: courier, monospace;
+    text-align: center;
+    font-size:10px;
+}
+
+#term_settings a:link {
+    text-decoration: none;
+}
+
+
+#term_settings a:visited {
+    text-decoration: none;
+}
+
+.term_link {
+    padding: 0.7em;
+}
