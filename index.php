@@ -76,7 +76,7 @@ switch ($userInput) {
 &middot;
 <a href="" onclick="setMashCookie('mash_inv.css')">
 <span class="term_link" style="color: black; background: white;" title="Black text, white backround">inverted</span></a>
-<p style="padding: 0.6em;">Proudly hosted with Debian and Apache</p>
+<p style="padding: 0.6em;">Proudly hosted by myself with Debian and Apache</p>
 </div>
 <script src="mash.js"></script>
 </body>
