@@ -10,7 +10,7 @@ I wrote this just for fun in `html`, `css`, `php` and `javascript`.
 
 <h2>"retro" style:</h2>
 
-![website image](scrots/mash_default.png)
+![website image](scrots/mash_retro.png)
 
 <h2>inverted:</h2>
 
