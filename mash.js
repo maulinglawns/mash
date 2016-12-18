@@ -40,8 +40,41 @@ function setStylesheet(aCookieValue)
             document.getElementById("css_styles").setAttribute("href", "mash_default.css");
     }
 }
+
+function getRandomInt(min, max)
+{
+    // Return an int between min and max
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function typeWriter()
+{
+    var hasShown = getCookieValue("welcomeShown");
+    console.log(hasShown);
+    // Get length of welcome text
+    var textLength = welcome.length;
+    // If we have shown all text, set cookie. We only want to
+    // display this _once_!
+    if (index >= textLength) {
+        shown = true;
+        console.log(shown);
+        setMashCookie("welcomeShown", "yes");
+        return;
+    }
+    // Emulates typing on a keyboard
+    document.getElementById("welcomeText").innerHTML += welcome.charAt(index);
+    index++;
+    var typeTime = setTimeout("typeWriter()", getRandomInt(10, 250));
+}
 /* -- End of functions -- */
 
 var cookieValueCss = getCookieValue("mashCssStyle");
+var index = 0;
+var welcome = "Welcome to mash - MAgnuSHell";
+var shown = false;
 
 setStylesheet(cookieValueCss);
+
+console.log(document.cookie);
+console.log(shown);
+

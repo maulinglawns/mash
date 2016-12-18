@@ -5,7 +5,7 @@
 <link id="css_styles" rel="stylesheet" type="text/css" href="mash_default.css">
 <title>mash - MAgnuSHell</title>
 </head>
-<body>
+<body onload="typeWriter()">
 <?php
 
 // Import variables and functions
@@ -56,6 +56,7 @@ switch ($userInput) {
 ?>
 
 <div id="console">
+    <p id="welcomeText"></p>
     <?php 
         if (isset($stdout)) {
             echo "<p>" . $stdout . "</p>"; 
