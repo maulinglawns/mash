@@ -68,13 +68,13 @@ switch ($userInput) {
 </div>
 
 <div id="term_settings">
-<a href="" onclick="setMashCookie('mash_default.css')">
+<a href="" onclick="setMashCookie('mashCssStyle', 'mash_default.css')">
 <span class="term_link" style="color: #fff; background: black;" title="White text, black backround">default style</span></a>
 &middot;
-<a href="" onclick="setMashCookie('mash_retro.css')">
+<a href="" onclick="setMashCookie('mashCssStyle', 'mash_retro.css')">
 <span class="term_link" style="color: #33cc33; background: black;" title="Green text, black backround">retro style</span></a>
 &middot;
-<a href="" onclick="setMashCookie('mash_inv.css')">
+<a href="" onclick="setMashCookie('mashCssStyle', 'mash_inv.css')">
 <span class="term_link" style="color: black; background: white;" title="Black text, white backround">inverted</span></a>
 <p style="padding: 0.6em;">Proudly hosted by myself with Debian and Apache</p>
 </div>

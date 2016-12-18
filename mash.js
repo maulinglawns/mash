@@ -1,10 +1,10 @@
 /* The javascript source for mash - MAgnuSHell */
 
 /* -- Functions -- */
-function setMashCookie(cookieName)
+function setMashCookie(cookieName, cookieValue)
 {
     /* Set cookie name. Based on this name, choose css style */
-    document.cookie = "mashCssStyle=" + cookieName;
+    document.cookie = cookieName + "=" + cookieValue;
 }
 
 function getCookieValue(aString)
@@ -42,8 +42,6 @@ function setStylesheet(aCookieValue)
 }
 /* -- End of functions -- */
 
+var cookieValueCss = getCookieValue("mashCssStyle");
 
-var cookieName = "mashCssStyle";
-var cookieValue = getCookieValue(cookieName);
-
-setStylesheet(cookieValue);
+setStylesheet(cookieValueCss);
