@@ -16,8 +16,11 @@ function getCookieValue(aString)
     var regex = new RegExp(aString + "=([^;]*)");
     /* The result is saved in an array */
     var cArr = regex.exec(document.cookie);
-    /* The value (if any) is saved in index 1 in the array */
-    var cValue = cArr[1];
+    /* Need to check if cArr is null to avoid TypeError */
+    if (cArr) {
+        /* The value (if any) is saved in index 1 in the array */
+        var cValue = cArr[1];
+    }
     
     if (cValue != "") {
         return cValue;
@@ -64,13 +67,21 @@ function typeWriter()
     // Emulates typing on a keyboard
     document.getElementById("welcomeText").innerHTML += welcome.charAt(index);
     index++;
-    var typeTime = setTimeout("typeWriter()", getRandomInt(10, 250));
+    if (welcome.charAt(index-1) == "." || welcome.charAt(index-1) == ":") {
+        /* Take longer pause if we type a '.' or ':' */
+        var typeTime = setTimeout("typeWriter()", getRandomInt(500, 850));
+    } else {
+        var typeTime = setTimeout("typeWriter()", getRandomInt(10, 200));
+    }
 }
 /* -- End of functions -- */
 
 var cookieValueCss = getCookieValue("mashCssStyle");
 var index = 0;
-var welcome = "Welcome to mash - MAgnuSHell";
+var welcome = "Welcome to mash - MAgnuSHell. I don't track you: \
+all cookies are destroyed after this session. Type 'help' at the \
+prompt below for options. Use the menu at the bottom to change terminal \
+style.";
 var shown = false;
 
 setStylesheet(cookieValueCss);

@@ -56,7 +56,7 @@ switch ($userInput) {
 ?>
 
 <div id="console">
-    <p id="welcomeText"></p>
+    <p style="width: 600px;" id="welcomeText"></p>
     <?php 
         if (isset($stdout)) {
             echo "<p>" . $stdout . "</p>"; 
