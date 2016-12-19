@@ -17,15 +17,15 @@ $shell = "THIS WEBSITE:<br />
          <strong>Vim</strong> and <strong>Geany</strong><br />";
         
 $help = "<table>
-         <strong>OPTIONS</strong>:
+         <caption style=\"text-align: left;\">OPTIONS:</caption>
          <tr><td class=\"tdLeft\">'help'</td><td> - show this help</td></tr>
          <tr><td>'who'</td><td> - show basic info about author</td></tr>
          <tr><td>'man mash'</td><td> - info about this website</td></tr>
-         <tr><td>'jobs'</td><td> - show my professional work history</td><td>
-         <tr><td>'cv'</td><td> - show my educational history</td><td>
-         <tr><td>'more'</td><td> - the author beyond the basics</td><td>
-         <tr><td>'mash -cl'</td><td> - contact info and links</td><td>
-         <tr><td>'rand'</td><td> - random (useless?) info about author</td><td>
+         <tr><td>'jobs'</td><td> - show my professional work history</td></tr>
+         <tr><td>'cv'</td><td> - show my educational history</td></tr>
+         <tr><td>'more'</td><td> - the author beyond the basics</td></tr>
+         <tr><td>'mash -cl'</td><td> - contact info and links</td></tr>
+         <tr><td>'rand'</td><td> - random (useless?) info about author</td></tr>
          </table>";
          
 $jobs = "JOBS:<br />
