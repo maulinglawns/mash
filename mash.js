@@ -52,6 +52,7 @@ function getRandomInt(min, max)
 
 function typeWriter()
 {
+    /* Emulates typing on a keyboard */
     if (getCookieValue("welcomeShown") == "yes") {
         /* If we have 'hasShown' cookie, then exit. 
          * We only want welcome text _once_ */
@@ -65,7 +66,7 @@ function typeWriter()
         setMashCookie("welcomeShown", "yes");
         return;
     }
-    // Emulates typing on a keyboard
+    
     document.getElementById("welcomeText").innerHTML += welcome.charAt(index);
     index++;
     if (welcome.charAt(index-1) == "." || welcome.charAt(index-1) == ":") {
