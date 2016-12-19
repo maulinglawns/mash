@@ -1,9 +1,9 @@
 /* The javascript source for mash - MAgnuSHell */
 
-/* -- Functions -- */
+/* ------ Functions ------ */
 function setMashCookie(cookieName, cookieValue)
 {
-    /* Set cookie name. Based on this name, choose css style */
+    /* Set cookie name and value. */
     document.cookie = cookieName + "=" + cookieValue;
 }
 
@@ -18,7 +18,7 @@ function getCookieValue(aString)
     var cArr = regex.exec(document.cookie);
     /* Need to check if cArr is null to avoid TypeError */
     if (cArr) {
-        /* The value (if any) is saved in index 1 in the array */
+        /* The cookie value is saved in index 1 in the array */
         var cValue = cArr[1];
     }
     
@@ -52,15 +52,16 @@ function getRandomInt(min, max)
 
 function typeWriter()
 {
-    var hasShown = getCookieValue("welcomeShown");
-    console.log(hasShown);
+    if (getCookieValue("welcomeShown") == "yes") {
+        /* If we have 'hasShown' cookie, then exit. 
+         * We only want welcome text _once_ */
+        return;
+    }
     // Get length of welcome text
     var textLength = welcome.length;
-    // If we have shown all text, set cookie. We only want to
-    // display this _once_!
+
     if (index >= textLength) {
-        shown = true;
-        console.log(shown);
+        /* Set cookie after showing welcome text once */
         setMashCookie("welcomeShown", "yes");
         return;
     }
@@ -74,7 +75,7 @@ function typeWriter()
         var typeTime = setTimeout("typeWriter()", getRandomInt(10, 200));
     }
 }
-/* -- End of functions -- */
+/* ------ End of functions ------ */
 
 var cookieValueCss = getCookieValue("mashCssStyle");
 var index = 0;
@@ -82,10 +83,6 @@ var welcome = "Welcome to mash - MAgnuSHell. I don't track you: \
 all cookies are destroyed after this session. Type 'help' at the \
 prompt below for options. Use the menu at the bottom to change terminal \
 style.";
-var shown = false;
 
+// Set style based on this cookie
 setStylesheet(cookieValueCss);
-
-console.log(document.cookie);
-console.log(shown);
-
