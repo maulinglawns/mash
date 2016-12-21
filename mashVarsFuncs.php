@@ -101,27 +101,52 @@ $more = "MORE INFORMATION ON AUTHOR:<br />
          &middot; Yes (B)";
          
 $randArr = array(
-                "I have a titanium rod in my left wrist",
-                "Only one of my tattoos are in colour",
-                "My favourite football (soccer) team is AIK Solna",
-                "The best book I've ever read is 'America' by Franz Kafka",
-                "I don't drink alcohol, the strongest drug I use is nicotine (snus)",
-                "My favourite beverage is cranberry juice",
-                "I can play the drums, guitar, bass guitar and keyboard",
-                "Most of my T-shirts are black",
-                "'By the time I get to Arizona' is my favourite Public Enemy song",
-                "I have seen Bruce Springsteen live two times",
-                "Eating jalapenos (or REALLY spicy food in general) is no longer an option",
-                "The most I have ever bench pressed was 95 kilos (209 pounds)",
+                "I have a titanium rod in my left wrist.",
+                "Only one of my tattoos are in colour.",
+                "My favourite football (soccer) team is AIK Solna.",
+                "The best book I've ever read is 'America' by Franz Kafka.",
+                "I don't drink alcohol, the strongest drug I use is nicotine (snus).",
+                "My favourite beverage is cranberry juice.",
+                "I can play the drums, guitar, bass guitar and keyboard.",
+                "Most of my T-shirts are black.",
+                "'By the time I get to Arizona' is my favourite Public Enemy song.",
+                "I have seen Bruce Springsteen live two times.",
+                "Eating jalapenos (or REALLY spicy food in general) is no longer an option.",
+                "The most I have ever bench pressed was 95 kilos (209 pounds).",
                 "Coffee is essential!",
+                "The first program I wrote was in Basic on a Commodore 64.",
+                "Star Trek > Star Wars",
+                "'Brazil' by Terry Gilliam is possibly the best movie I've ever seen.",
+                "I flat out refuse to eat food with coriander!",
+                "My favourite editors are Vim and Geany.",
+                "'Hacker' != 'Cracker', I am not the latter but the first!",
+                "I am rarely bored.",
                 );
                 
 // Functions
-function getRand($anArray) 
+function getUniqRand(&$anArray) 
 {
-    // get random string from an array and return it
+    // Get random value from an array and return it.
+    // Delete array item after showing as to not repeat the value.
+    //
+    // **NOTE** must pass array by reference (the '&' sign).
+    // Otherwise the function will not update global $_SESSION array!!!
+    
+    // If $anArray is empty, return
+    if (empty($anArray)) {
+        return "<span style=\"color: red;\">Nothing more to see!</span>";
+    }
+    
+    // If $anArray is _not_ empty...
+    // first get a random key from $anArray
     $key = array_rand($anArray, 1);
-    return $anArray[$key];
+    // Save the value in variable
+    $arrValue = $anArray[$key];
+    // Now delete this value from $anArray
+    unset($anArray[$key]);
+    
+    // Return the random value from $anArray
+    return $arrValue;
 };
     
 ?>
