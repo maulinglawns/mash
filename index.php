@@ -7,9 +7,20 @@
 </head>
 <body onload="typeWriter()">
 <?php
+// Start session
+if (! isset($_SESSION)) {
+    session_start();
+}
 
 // Import variables and functions
 require_once('mashVarsFuncs.php');
+
+// Assign array to session variable if not already set
+if (! isset($_SESSION['mashArray'])) {
+    $_SESSION['mashArray'] = $randArr;
+}
+
+//var_dump($_SESSION['mashArray']);
     
 // Initalize varibles here
 $userInput = "";
@@ -47,7 +58,7 @@ switch ($userInput) {
     $stdout = $contact;
         break;
     case "rand";
-        $stdout = getRand($randArr);
+        $stdout = getUniqRand($_SESSION['mashArray']);
         break;
     default:
         $stdout = $inputError;
