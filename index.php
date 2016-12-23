@@ -19,8 +19,6 @@ require_once('mashVarsFuncs.php');
 if (! isset($_SESSION['mashArray'])) {
     $_SESSION['mashArray'] = $randArr;
 }
-
-//var_dump($_SESSION['mashArray']);
     
 // Initalize varibles here
 $userInput = "";
