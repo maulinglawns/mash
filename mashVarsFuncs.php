@@ -1,10 +1,13 @@
 <?php
 // Variables
+
+$age = timeSince("1975-12-22", date("Y-m-d"));
+
 $who = "INFORMATION ON AUTHOR:<br />
         Name: <strong>Magnus Wallin</strong><br />
         Species: <strong>Human</strong><br />
         Gender: <strong>Male</strong><br />
-        Date of Birth: <strong>1975</strong><br />
+        Age: <strong>{$age}</strong><br />
         Nationality: <strong>Swedish</strong><br />
         Current location: <strong>Solna, Sweden</strong>";
 
@@ -147,6 +150,27 @@ function getUniqRand(&$anArray)
     
     // Return the random value from $anArray
     return $arrValue;
-};
+}
+
+function timeSince($date1, $date2, $retType = "")
+{
+    // Return time passed between two dates in format:
+    // YYYY-M-D.
+    // If third argument is char "e", echo the result instead of return
+    date_default_timezone_set("Europe/Stockholm");
+    
+    $firstDate = date_create($date1);
+    $secondDate = date_create($date2);
+    
+    $interval = date_diff($firstDate, $secondDate);
+    
+    if ($retType == "e") {
+    // If "e" is passed as 3rd argument, echo instead of return
+        echo $interval->format("%Y years, %m months and %d days");
+        return;
+    }
+    
+    return $interval->format("%Y years, %m months and %d days");
+}
     
 ?>
