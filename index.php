@@ -5,6 +5,7 @@
 <link id="css_styles" rel="stylesheet" type="text/css" href="mash_default.css">
 <title>mash - MAgnuSHell</title>
 </head>
+<div id="container">
 <body onload="typeWriter()">
 <?php
 // Start session
@@ -90,5 +91,6 @@ switch ($userInput) {
 </div>
 <script src="mash.js"></script>
 </body>
+</div>
 </html>
 
