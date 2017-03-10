@@ -35,8 +35,7 @@ $jobs = "JOBS:<br />
          <strong>Current position:</strong><br />
          &middot; Systems Engineer at 24 Solutions AB<br />
          <strong>Previous:</strong><br />
-         &middot; System administrator (and more!) at
-         <a href=\"http://rehnstroem.se\" target=\"_blank\">this place</a><br />
+         &middot; System- and network administrator at Antikvariat Mats Rehnström (2001-2017)<br />
          &middot; IT-consultant at Svenska antikvariatf&ouml;reningen (2011-12)<br />
          &middot; Webmaster at Bokbinderi Roger Johansson (2011)<br />
          &middot; Shop assistant at Johans Skivb&ouml;rs (1996-2000)<br />
