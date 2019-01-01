@@ -84,17 +84,14 @@ $more = "MORE INFORMATION ON AUTHOR:<br />
          <strong>Preferred coding languages:</strong><br />
          &middot; Bash<br />
          &middot; Python 3<br />
+         &middot; Rust<br />
          &middot; Php<br />
          &middot; C<br />
-         &middot; C++<br />
          <strong>Skills:</strong><br />
          &middot; GNU/Linux<br />
          &middot; Linux system administration<br />
-         &middot; macOS<br />
+         &middot; Programming<br />
          &middot; Web design<br/>
-         &middot; Wordpress<br />
-         &middot; GIMP<br />
-         &middot; InDesign<br />
          &middot; Typography<br />
          &middot; Office administration<br />
          <strong>Interests:</strong><br />
@@ -102,7 +99,6 @@ $more = "MORE INFORMATION ON AUTHOR:<br />
          &middot; Hacking (per <a href=\"https://is.gd/T5juSr\" target=\"_blank\">this definition</a>)<br />
          &middot; Books (I read more than anyone I know)<br />
          &middot; Music<br />
-         &middot; Working out<br />
          <strong>Driver's license:</strong><br />
          &middot; Yes (B)";
          
