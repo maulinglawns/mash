@@ -45,6 +45,8 @@ $jobs = "JOBS:<br />
          &middot; Experimental Technician at AstraZeneca (1992-1993)<br />";
          
 $cv = "EDUCATION:<br />
+        <strong>Linux Security Fundamentals (LFS216)</strong><br />
+        The Linux Foundation, 2019<br />
         <strong>Linux Networking and administration (LFS211)</strong><br />
         The Linux Foundation, 2018<br />
         <strong>Essentials of Linux System administration (LFS201)</strong><br />
