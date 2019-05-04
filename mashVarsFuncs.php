@@ -33,8 +33,9 @@ $help = "<table>
          
 $jobs = "JOBS:<br />
          <strong>Current position:</strong><br />
-         &middot; Linux DevOps Engineer at 24 Solutions AB<br />
+         &middot; System Specialist at Swedish Pensions Agency<br />
          <strong>Previous:</strong><br />
+         &middot; Linux DevOps Engineer at 24 Solutions AB<br />
          &middot; Linux Systems Engineer at 24 Solutions AB (2017-2018) <br />
          &middot; System- and network administrator at Antikvariat Mats Rehnström (2001-2017)<br />
          &middot; IT-consultant at Svenska antikvariatf&ouml;reningen (2011-12)<br />
